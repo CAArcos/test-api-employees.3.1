@@ -1,0 +1,15 @@
+version: "2.4"
+services: 
+    mysql:
+        container_name: mysql
+        image: mysql:8.0.25
+        volumes: 
+        - ./sql-data/db:/var/lib/mysql
+        ports: 
+        - "3307:3306"
+        hostname: DESKTOP-NL0K2E3
+        environment: 
+            MYSQL_DATABASE: 'test_db'
+            MYSQL_ROOT_USER: 'root'
+            MYSQL_ROOT_PASSWORD: 'admin' 
+            MYSQL_ROOT_PASSWORD: 'admin'   
